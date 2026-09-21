@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cars Dealership</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
+        nav {
+            background: #111827;
+            padding: 16px 8%;
+            display: flex;
+            gap: 28px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a.active {
+            color: #60a5fa;
+        }
+        .contact-section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+        .contact-section h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+        .intro {
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+            color: #4b5563;
+        }
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .contact-card {
+            background: white;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+        .contact-card h2 {
+            margin-top: 0;
+            color: #1d4ed8;
+        }
+        .contact-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-item {
+            margin: 18px 0;
+            line-height: 1.6;
+        }
+        .contact-item strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .contact-item a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        .hours {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .hours th, .hours td {
+            padding: 10px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: left;
+        }
+        @media (max-width: 700px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html" class="active">Contact Us</a>
+    </nav>
+
+    <main class="contact-section">
+        <h1>Contact Us</h1>
+
+        <p class="intro">
+            Have a question about a vehicle, dealership, or review?
+            Our Cars Dealership team is ready to help. Contact us using
+            the information below.
+        </p>
+
+        <div class="contact-container">
+            <section class="contact-card">
+                <img
+                    class="contact-image"
+                    src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1000&q=80"
+                    alt="Cars Dealership showroom">
+
+                <h2>Get in Touch</h2>
+
+                <div class="contact-item">
+                    <strong>Head Office</strong>
+                    100 Automotive Drive<br>
+                    Detroit, MI 48201<br>
+                    United States
+                </div>
+
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    <a href="tel:+18005550199">+1 (800) 555-0199</a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <a href="mailto:support@carsdealership.com">
+                        support@carsdealership.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Customer Service</strong>
+                    <a href="mailto:customerservice@carsdealership.com">
+                        customerservice@carsdealership.com
+                    </a>
+                </div>
+            </section>
+
+            <section class="contact-card">
+                <h2>Business Hours</h2>
+
+                <table class="hours">
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9:00 AM - 7:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10:00 AM - 4:00 PM</td>
+                    </tr>
+                </table>
+
+                <h2 style="margin-top: 35px;">Dealer Support</h2>
+
+                <div class="contact-item">
+                    <strong>Dealer Relations</strong>
+                    <a href="mailto:dealers@carsdealership.com">
+                        dealers@carsdealership.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Technical Support</strong>
+                    <a href="mailto:techsupport@carsdealership.com">
+                        techsupport@carsdealership.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Why Contact Us?</strong>
+                    Our team can help with dealership information,
+                    vehicle questions, customer reviews, and general
+                    support for our online services.
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
